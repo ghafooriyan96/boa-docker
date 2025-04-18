@@ -8,6 +8,7 @@ This repo provides a Dockerfile for building and running the [Boa Compiler](http
 
 ```bash
 docker buildx build --platform linux/amd64 -t boa-builder --load .
+```
 
 ### 2. When build finishes:
 
