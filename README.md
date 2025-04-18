@@ -7,4 +7,15 @@ This repo provides a Dockerfile for building and running the [Boa Compiler](http
 ### 1. Build the Docker image
 
 ```bash
-docker build -t boa-builder .
+docker buildx build --platform linux/amd64 -t boa-builder --load .
+
+### 2. When build finishes:
+
+```bash
+docker run -it boa-builder
+
+### 3. Inside container:
+
+```bash
+cd /opt/boa
+ant  # optional: recompile
