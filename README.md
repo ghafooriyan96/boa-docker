@@ -14,9 +14,11 @@ docker buildx build --platform linux/amd64 -t boa-builder --load .
 
 ```bash
 docker run -it boa-builder
+```
 
 ### 3. Inside container:
 
 ```bash
 cd /opt/boa
 ant  # optional: recompile
+```
